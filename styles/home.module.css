@@ -1,0 +1,186 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jungle{
+    width: 1500px;
+    height: 400px;
+    position: absolute;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.right{
+    flex: 0.6;
+    position: relative;
+    margin-left: 15px;
+}
+
+.butterflies1{
+    width: 405px;
+    height: 405px;
+    position: absolute;
+}
+.butterflies2{
+    margin-left: 800px;
+    width: 405px;
+    height: 405px;
+    position: absolute;
+}
+.quote{
+    margin-top: 4rem;
+    margin-left: 300px;
+    background-color: #AEBC7A;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quote>span{
+    z-index: 2;
+}
+
+.quote>div{
+    position: absolute;
+    background-color: darkgreen;
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    border-radius: 4rem;
+    position: absolute;
+    z-index: 1;
+    animation: mymove 8s infinite;
+}
+
+@keyframes mymove{
+    from {right: 0px;}
+    to {left: 485px;}
+}
+
+.hometext{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hometext .dynamictext{
+    margin-left: 45px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+
+}
+
+.dynamictext li{
+    color: darkgreen;
+    list-style: none;
+    font-weight: bold;
+    font-size: 4.5rem;
+    animation: slide 7s steps(4) infinite;
+    position: relative;
+    top: 0;
+}
+
+
+@keyframes slide{
+    100%{
+        top: -360px;
+    }
+}
+
+
+
+.dynamictext li{
+    position: relative;
+}
+
+.dynamictext li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* border-left: 2px solid darkgreen; */
+    /* background: white; */
+}
+
+/* #gift::after{
+    animation: typing 5s steps(10) infinite;
+}
+
+#vol::after{
+    animation: typing 5s steps(9) infinite;
+}
+
+#blog::after{
+    animation: typing 5s steps(4) infinite;
+}
+
+#aware::after{
+    animation: typing 5s steps(15) infinite;
+} */
+
+/* @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  } */
+
+.right>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 4rem;
+    border: 0;
+    font-size: 16px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 6;
+}
+
+.logo{
+    width: 10rem;
+    height: 6rem;
+}
+
+.headermenu{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.li{
+    cursor: pointer;
+}
+.li:hover{
+    color: #AEBC7A;
+    cursor: pointer;
+}
+

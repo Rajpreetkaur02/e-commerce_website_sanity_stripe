@@ -1,0 +1,64 @@
+.help{
+    margin-top: 327px;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 550px;
+}
+
+.helpheader{
+    padding: 30px;
+    display: flex;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: lightgoldenrodyellow;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.helpcategories{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.category1, .category2,  .category3{
+    width: 300px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    background-color: #AEBC7A;
+    padding: 1rem;
+    color: black;
+    justify-content: space-between;
+}
+
+.category1>:nth-child(1), .category2>:nth-child(1), .category3>:nth-child(1){
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.category1>:nth-child(2), .category2>:nth-child(2), .category3>:nth-child(2){
+    gap: 3rem;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.learnmore{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border: 3px solid darkgreen;
+    padding: 6px;
+    width: 100px;
+}
+
+.category1:hover, .category2:hover, .category3:hover{
+    background: lightgoldenrodyellow;
+    cursor: pointer;
+}
+

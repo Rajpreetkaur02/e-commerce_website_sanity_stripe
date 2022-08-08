@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    z-index: 6;
+}
+
+.logo{
+    width: 10rem;
+    height: 6rem;
+}
+
+.headermenu{
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.li{
+    cursor: pointer;
+}
+.li:hover{
+    color: #AEBC7A;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 0rem;
+    margin-left: 3rem;
+    background-color: #AEBC7A;
+    border-radius: 4rem;
+    width: 150px;
+    height: 50px;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    cursor: pointer;
+}
+
+.btn>span{
+    z-index: 2;
+}
+
+.btn>div{
+    position: absolute;
+    display: flex;
+    background-color: darkgreen;
+    width: 136px;
+    height: 80%;
+    left: 8px;
+    border-radius: 4rem;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
