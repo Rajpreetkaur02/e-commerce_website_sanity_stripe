@@ -23,7 +23,7 @@ const home = () => {
                     <ul className={styles.dynamictext}>
                         <li><span id='gift'>Buy a gift!</span></li>
                         <li><span id='vol'>cool graphic t-shirts</span></li>
-                        <li><span id='blog'>much more coming soon</span></li>
+                        <li><span id='blog'>more coming soon</span></li>
                         <li><span id='aware'>spread awareness</span></li>
                     </ul>
                 </div>

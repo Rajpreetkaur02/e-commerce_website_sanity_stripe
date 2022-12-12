@@ -26,7 +26,7 @@
 .button{
     color: white;
     padding: 10px 25px;
-    background: transparent;
+    background: darkgreen;
     border: 1px solid #fff;
     border-radius: 20px;
     outline: none;
@@ -271,10 +271,10 @@
     }
 
     .button{
-        color: white;
+        color: #fff;
         padding: 10px 25px;
         /* margin-right: 50px; */
-        background: transparent;
+        background-color: darkgreen;
         border: 1px solid #fff;
         border-radius: 20px;
         outline: none;
@@ -317,6 +317,123 @@
     .menu{
         width: 18px;
         margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 600px)
+{   
+    .quote{
+        margin-top: 4rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #AEBC7A;
+        border-radius: 4rem;
+        width: fit-content;
+        padding: 10px 13px;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .quote>span{
+        z-index: 2;
+    }
+    
+    .quote>div{
+        position: absolute;
+        background-color: darkgreen;
+        width: 7.4rem;
+        height: 80%;
+        left: 20px;
+        border-radius: 4rem;
+        position: absolute;
+        z-index: 1;
+        animation: mymove 8s infinite;
+    }
+
+    @keyframes mymove{
+        from {right: 0px;}
+        to {left: 210px;}
+    }
+    .hometext{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.0rem;
+        text-transform: uppercase;
+        justify-content: center;
+    }
+    
+    .hometext .dynamictext{
+        margin-left: 0px; 
+        height: 100px;
+        line-height: 90px;
+        overflow: hidden; 
+    }
+    
+    .dynamictext li{
+        color: darkgreen;
+        list-style: none;
+        font-weight: bold;
+        font-size: 1.8rem;
+        animation: slide 7s steps(4) infinite; 
+        position: relative;
+        top: 0;
+    }
+    
+    
+    @keyframes slide{
+        100%{
+            top: -360px;
+        }
+    }
+    
+    .dynamictext li{
+        position: relative;
+    }
+    
+    .dynamictext li span::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        /* border-left: 2px solid darkgreen; */
+        /* background: white; */
+    }
+    
+    .statictext{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* margin-bottom: 10%;  */
+        color: darkgreen;
+        font-family: sans-serif italic;
+    }
+
+    .button{
+        color: #fff;
+        padding: 10px 25px;
+        /* margin-right: 50px; */
+        background-color: darkgreen;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .mainbutton{
+        color: darkgreen;
+        margin-top: 10%;
+        padding: 10px 25px;
+        background: transparent;
+        border: 1px solid darkgreen;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
     }
     
 }
