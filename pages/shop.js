@@ -6,9 +6,12 @@ import styles from '../styles/shop.module.css'
 
 import Product from '../components/product';
 
+import Header from '../components/header';
+
 const shop = ({products}) => (
       
 <div>
+      <Header/>
       <div className={styles.productsheading}>
         <h2>Hi, happy to see you!</h2>
         <p>checkout these cool t-shirts and do little something for our wildlife buddies</p>

@@ -1,13 +1,24 @@
-.header{
+.navbar{
+    margin: 6px 18px;
+    padding: 5px 5px;
     display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
-    z-index: 6;
+    justify-content: space-between; 
+    position: relative;
+    height: 20%;
 }
 
+/* .navbarcontainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 18px;
+    position: relative;
+  } */
+
+
 .logo{
-    width: 10rem;
+    width: 150px;
     height: 6rem;
+    cursor: pointer;
 }
 
 .headermenu{
@@ -60,3 +71,33 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.carticon{
+    font-size: 30px;
+    margin-left: 80px;
+    color: gray;
+    cursor: pointer;
+    position: relative; 
+    transition: transform .4s ease;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* .carticon:hover{
+    transform: scale(1.1,1.1);
+  } */
+
+  .cartitemqty{
+    position: absolute;
+    right: -4px;
+    font-size: 12px;
+    color: #eee;
+    background-color: #f02d34;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+  }

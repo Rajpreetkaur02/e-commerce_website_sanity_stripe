@@ -12,18 +12,19 @@ const Layout = ({ children }) => {
   return (
     <div className={styles.layout}>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Into the Wild</title>
       </Head>
       <header>
-        <Header/>
-        <Navbar />
+        {/* <Header/>
+        <Navbar /> */}
       </header>
       
       <main className={styles.maincontainer}>
         {children}
       </main>
       <footer>
-        <Footer />
+        {/* <Footer /> */}
       </footer>
     </div>
   )

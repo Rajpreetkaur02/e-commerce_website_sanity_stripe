@@ -3,6 +3,8 @@ import styles from '../../styles/shop.module.css';
 
 import  Product  from '../../components/product';
 
+import Header from '../../components/header';
+
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
 import { client, urlFor } from '../../lib/client'
@@ -21,6 +23,7 @@ const ProductDetails = ({product, products}) => {
     }    
   return (
     <div>
+      <Header/>
         <div className={styles.productdetailcontainer}>
             <div>
                 <div className={styles.productdetailimage}>
