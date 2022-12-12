@@ -25,18 +25,6 @@
     position: relative;
     margin-left: 15px;
 }
-
-.butterflies1{
-    width: 405px;
-    height: 405px;
-    position: absolute;
-}
-.butterflies2{
-    margin-left: 800px;
-    width: 405px;
-    height: 405px;
-    position: absolute;
-}
 .quote{
     margin-top: 4rem;
     margin-left: 300px;
