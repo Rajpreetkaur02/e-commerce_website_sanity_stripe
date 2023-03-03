@@ -8,15 +8,18 @@ import Product from '../components/product';
 
 import Header from '../components/header';
 
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
+
 const shop = ({products}) => (
       
 <div>
-      <Header/>
+      {/* <Header/>
       <div className={styles.productsheading}>
         <h2>Hi, happy to see you!</h2>
         <p>checkout these cool t-shirts and do little something for our wildlife buddies</p>
-      </div>
-
+      </div> */}
+      <Navbar/>
       <div className={styles.productscontainer}>
         {products?.map((product) => <Product key={product._id} product={product}/>)}
       </div>

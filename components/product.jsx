@@ -13,12 +13,12 @@ const product = ({ product: { image, name, slug, price } }) => {
             <div className={styles.productcard}>
                 <img
                   src={urlFor(image && image[0])}
-                  width={250}
-                  height={200}
+                  width={400}
+                  height={330}
                   className={styles.productimage}
                 />
-                <p className='productname'>{name}</p>
-                <p className='productprice'>${price}</p>
+                <p className={styles.productname}>{name}</p>
+                <p className={styles.productprice}>Rs. {price}</p>
 
             </div>
         </Link>

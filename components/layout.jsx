@@ -16,8 +16,7 @@ const Layout = ({ children }) => {
         <title>Into the Wild</title>
       </Head>
       <header>
-        {/* <Header/>
-        <Navbar /> */}
+        {/* <Navbar /> */}
       </header>
       
       <main className={styles.maincontainer}>

@@ -1,37 +1,817 @@
- .hero{
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,100&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,100&family=Poppins&family=Rancho&family=Titillium+Web:wght@300&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.hero{
     width: 100%;
     height: 100vh;
-    background-image: url('../public/images/MainBg.jpg');
+    background-color: #EBE7CE;
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
  }
 
- .navbar{
-    width: 85%;
-    height: 15%;
-    margin: auto;
+.main{
+    height: 84.5vh;
     display: flex;
-    align-items: center;
+}
+
+.left{
+    padding: 5vw;
+    padding-left: 10vw;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.logo{
-    width: 130px;
-    height: 5rem;
-    cursor: pointer;
+#mainText{
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.desc{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
 }
 
-.button{
+#starting{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid black;
+}
+
+#price{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: green;
+}
+
+#desctext{
+    padding-left: 15px;
+}
+
+#mainbutton{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    background-color: orange;
+    font-family: 'Poppins', sans-serif;
+}
+
+#maintextimg{
+    padding-left: 10px;
+    width: 50px;
+}
+.center{
+    width: 90%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.circle{
+    background-color: yellow;
+    margin-left: 3%;
+    width: 80%;
+    height:80%;
+    border-radius: 100%;
+}
+
+#mainimg{
+    width: 30%;
+    height: 90%;
+    margin-bottom: 6.3%;
+    position: absolute;
+}
+.right{
+    width: 50%;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mainbox{
+    width: 60%;
+    height: 25%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 1px 4px 10px lightgray;
+}
+
+#boxmaintext{
+    font-size: 1.2rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+#boxtext{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.orangeicon{
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.myproducts{
+    display: flex;
+}
+
+.myproductcards{
+    width: 33.33%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cardtext1{
+    padding-left: 5%;
+    font-size: 1.3rem;
+    margin-top: 5vh;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+.cardtext2{
+    padding-left: 5%;
+    font-size: 2rem;
+    margin-top: 10vh;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+#darkimgtext{
     color: white;
-    padding: 10px 25px;
-    background: darkgreen;
-    border: 1px solid #fff;
+}
+.cardbutton{
+    margin-left: 5%;
+    color: white;
+    padding: 13px 30px;
+    background:#00cc00;
+    border: none;
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    margin-top: 22vh;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
 }
+
+.collections{
+    margin-top: 10%;
+    display: flex;
+}
+
+.collectiontext{
+    padding-left: 6%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#collimg{
+    width: 30vw;
+    height: 70vh;
+}
+
+#coll1{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#coll2{
+    padding-top: 10px;
+    color: grey;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#coll3{
+    width: 56%;
+    padding-top: 40px;
+    color: darkgreen;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    border-bottom: 1px solid darkgreen;
+}
+
+.live{
+    padding: 10px;
+    position:relative;
+}
+
+.trend{
+    padding: 10px;
+    position:relative;
+}
+
+#ecoimg{
+    margin-top: 10%;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.eco{
+    margin-top: 10%;
+    margin-left: 10%;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#ecotext1{
+   font-size: 1.3rem;
+   margin-top: 13%;
+   position: absolute;
+    
+}
+#ecotext2{
+    width: 35%;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 16%;
+    position: absolute;
+   
+}
+#ecotext3{
+    font-size: 1.3rem;
+    margin-top: 28%;
+    position: absolute;
+}
+#ecobutton{
+    margin-top: 33%;
+    position: absolute;
+    padding: 13px 30px;
+    background:darkgreen;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;   
+}
+
+.footer{
+    margin-top: 60%;
+    width: 100%;
+    height: 50vh;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contactdetails{
+    display: flex;
+    justify-content: space-around;
+    height: 25vh;
+    padding-top: 10vh;
+    width: 100%;
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.callus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+.followus{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.copyright{
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    border-top: 1px solid grey;
+    padding: 10px;
+}
+
+#footerheading{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#email{
+    width: 11vw;
+    border-bottom: 1px solid white;
+}
+
+
+@media screen and (max-width: 800px)
+{
+    .main{
+        height: 84.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left{
+        padding: 5vw;
+        padding-left: 10vw;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #mainText{
+        font-weight: 800;
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+    } 
+    
+    .desc{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+    }
+    
+    #starting{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid black;
+    }
+    
+    #price{
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: green;
+    }
+    
+    #desctext{
+        padding-left: 15px;
+    }
+    
+    #mainbutton{
+        border: none;
+        margin-top: 40px;
+        padding: 10px 25px;
+        border-radius: 20px;
+        background-color: orange;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    #maintextimg{
+        padding-left: 10px;
+        width: 50px;
+    }
+    .center{
+        width: 90%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .circle{
+        background-color: yellow;
+        margin-left: 100%;
+        width: 80%;
+        height:80%;
+        border-radius: 100%;
+    }
+    
+    #mainimg{
+        width: 70%;
+        height: 50%;
+        margin-top: 40%;
+        margin-left: 30%;
+        margin-bottom: 20%;
+        position: absolute;
+    }
+    .right{
+        width: 50%;
+        padding-top: 6%;
+        padding-bottom: 8%;
+        margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+    .mainbox{
+        width: 60%;
+        height: 25%;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        box-shadow: 1px 4px 10px lightgray;
+    }
+    
+    #boxmaintext{
+        font-size: 0.9rem;
+        font-family: 'Fredoka One', cursive;
+    }
+    
+    #boxtext{
+        font-size: 0.6rem;
+        font-family: 'Poppins', sans-serif; 
+    }
+
+    .myproducts{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .myproductcards{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .collections{
+        margin-top: 20%;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .collectiontext{
+        padding-left: 6%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .live{
+        display: none;
+    }
+    
+    .trend{
+        display: none;
+    }
+    
+    #ecoimg{
+        margin-top: 10%;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .eco{
+        margin-top: 10%;
+        margin-left: 10%;
+        font-family: 'Poppins', sans-serif; 
+    }
+    
+    #ecotext1{
+       font-size: 1.3rem;
+       margin-top: 10%;
+    }
+    #ecotext2{
+        margin-top: 25%;
+        width: 35%;
+        font-weight: 600;
+        font-size: 1.4rem; 
+    }
+    #ecotext3{
+        font-size: 0.9rem;
+        margin-top: 65%;
+        width: 35%
+    }
+    #ecobutton{
+        margin-top: 80%;
+        padding: 13px 30px;
+        background:darkgreen;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;   
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .main{
+        height: 84.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left{
+        padding: 5vw;
+        padding-left: 10vw;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #mainText{
+        font-weight: 800;
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+    } 
+    
+    .desc{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+    }
+    
+    #starting{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        border-right: 2px solid black;
+    }
+    
+    #price{
+        font-weight: 600;
+        font-size: 2rem;
+        color: green;
+    }
+    
+    #desctext{
+        padding-left: 15px;
+    }
+    
+    #mainbutton{
+        border: none;
+        margin-top: 40px;
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.6rem;
+        background-color: orange;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .center{
+        width: 90%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #mainimg{
+        width: 65%;
+        height: 60%;
+        margin-top: 50%;
+        margin-left: 32%;
+        margin-bottom: 20%;
+        position: absolute;
+    }
+    .right{
+        width: 50%;
+        padding-top: 6%;
+        padding-bottom: 8%;
+        margin-left: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+    .mainbox{
+        width: 60%;
+        height: 25%;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        box-shadow: 1px 4px 10px lightgray;
+    }
+    
+    #boxmaintext{
+        font-size: 1.6rem;
+        font-family: 'Fredoka One', cursive;
+    }
+    
+    #boxtext{
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif; 
+    }
+    .myproducts{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .myproductcards{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .collections{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .collectiontext{
+        padding-left: 6%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    #collimg{
+        width: 50vw;
+        height: 55vh;
+    }
+    
+    #coll1{
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif; 
+    }
+    
+    #coll2{
+        padding-top: 10px;
+        color: grey;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif; 
+    }
+    
+    #coll3{
+        width: 56%;
+        padding-top: 40px;
+        color: darkgreen;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif; 
+        cursor: pointer;
+        border-bottom: 1px solid darkgreen;
+    }
+    
+    .live{
+        padding-left: 40vw;
+        position:relative;
+    }
+    
+    .trend{
+        display: none;
+    }
+    
+    #ecoimg{
+        margin-top: 10%;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .eco{
+        margin-top: 10%;
+        margin-left: 10%;
+        font-family: 'Poppins', sans-serif; 
+    }
+    
+    #ecotext1{
+       font-size: 1.3rem;
+       margin-top: 20%;
+    }
+    #ecotext2{
+        margin-top: 25%;
+        width: 35%;
+        font-weight: 600;
+        font-size: 2.5rem; 
+    }
+    #ecotext3{
+        font-size: 1.3rem;
+        margin-top: 48%;
+        width: 35%
+    }
+    #ecobutton{
+        margin-top: 58%;
+        padding: 13px 30px;
+        background:darkgreen;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;   
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content{
     color: black;
     position: absolute;

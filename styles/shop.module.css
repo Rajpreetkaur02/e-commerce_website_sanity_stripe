@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:ital,wght@1,100&family=Poppins&family=Rancho&family=Titillium+Web:wght@300&display=swap');
+
+
 .maincontainer{
   scrollbar-width: 0;
 }
@@ -93,25 +96,26 @@
      cursor: pointer;
       transform: scale(1, 1);
       transition: transform 0.5s ease;
-     color: #324d67;
-    
+      color: #324d67;
     }
-    /* .productcard:hover{
-    } */
+    
     .productimage{
       border-radius: 15px;
-     background-color: #ebebeb;
+      background-color: #ebebeb;
       transform: scale(1, 1);
       transition: transform 0.5s ease;
     }
     
     .productname{
-      font-weight: 500;
+      font-weight: 800;
+      font-family: 'Poppins', sans-serif; 
+      text-align: center;
     }
     .productprice{
       font-weight: 800;
-      margin-top: 6px;
-      color: black;
+      margin-top: 0px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
     }
     
     .hero-banner-container{
@@ -173,7 +177,7 @@
     .desc p{
       color: #5f5f5f;
       font-weight: 100;
-    text-align: end;
+      text-align: end;
     }
     .desc h5{
       margin-bottom: 12px;
@@ -404,23 +408,22 @@
       transform: scale(1.0,1.0);
     }
     .productdetailcontainer{
-      display: flex;
+     display: flex;
      gap: 40px;
      margin: 40px;
      margin-top: 60px;
      color: #324d67;
-    
     }
     .productdetailimage>img{
       width: 100%;
+      height: 98%;
     }
     
     .productdetailimage{
       border-radius: 15px;
-       background-color: #ebebeb;
-    
-      width: 500px;
-      height: 260px;
+      ackground-color: #ebebeb;
+      width: 100%;
+      height: 60%;
       cursor: pointer;
       transition: .3s ease-in-out;
     }
